@@ -1,1 +1,0 @@
-# survey_idea.github.io
