@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title >HTML 5 Boilerplate < /title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<head>
-<script src="index.js"> </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Madelein's Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input type="text" id="name" required placeholder="Enter your name..."></label>
+      </fieldset>
+      <fieldset>
+        <label id="email-label" for="email">Email: <input type="email" id="email" required placeholder="Enter your email..."></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number">Age (optional): <input type="number" id="number" min="13" max="120" placeholder="Age..."></label>
+      </fieldset>
+      <fieldset>
+        <label>Which option best describe your current role: 
+        <select id="dropdown">
+          <option value="">Select your current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select></label>
+      </fieldset>
+      <fieldset>
+        <label for="choice-yes"><input type="radio" name="recommend" id="choice-yes" value="1"> Definitely</label>
+        <label  for="choice-no"><input type="radio" name="recommend" id="choice-no" value="2"> Not Really</label>
+        <label  for="choice-unsure" ><input type="radio" name="recommend" id="choice-unsure" value="3"> Unsure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite thing: 
+        <select id="dropdown">
+          <option value="">Select your favorite thing</option>
+          <option value="1">Option1</option>
+          <option value="2">Option2</option>
+          <option value="3">Option3</option>
+          <option value="4">Option4</option>
+        </select></label>
+      </fieldset>
+      <fieldset><label>
+        Where can I apply stuff
+        <label><input type="checkbox" value="1"> Here1</label></label>
+        <label><input type="checkbox" value="2"> Here2</label></label>
+        <label><input type="checkbox" value="3"> Here3</label></label>
+        <label><input type="checkbox" value="4"> Here4</label></label>
+        <label><input type="checkbox" value="5"> Here5</label></label>
+        <label><input type="checkbox" value="6"> Here6</label></label>
+        <label><input type="checkbox" value="7"> Here7</label></label>
+      </fieldset>
+      <fieldset>
+        <label> Any extra things to add
+        <textarea></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
 </html>
